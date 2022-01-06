@@ -7,6 +7,5 @@ storageBucket: "todolist-80ceb.appspot.com",
 messagingSenderId: "344518057794",
 appId: "1:344518057794:web:5bc788473b0bf873a972db"
 };
-
 // Initializa Firebase
 firebase.initializeApp(firebaseConfig);
