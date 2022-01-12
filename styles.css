@@ -82,3 +82,24 @@ p {
   left: calc(50% - 100px);
   z-index: 1;
 }
+
+.password {
+  background-color: transparent;
+  color: black;
+  text-decoration: underline;
+}
+
+#auth img {
+  cursor: pointer;
+  margin: 4px;
+  transition: .5s;
+}
+
+#auth img:hover {
+  opacity: 0.75;
+}
+
+#userImg {
+  height: 40px;
+  border-radius: 100%;
+}

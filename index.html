@@ -40,6 +40,11 @@
             <button type="submit" id="submitAuthForm">Acessar</button>
           </form>
     
+          <!--Alternar a senha -->
+          <p id="passwordReset">
+            <button onclick="sendPasswordResetEmail()" class="password">Esqueci minha senha</button>
+          </p>
+
           <!--Alternar o fomulário de autenticação para o cadastro de novas contas-->
           <p id="register">
             Não possui uma conta?
@@ -51,13 +56,23 @@
             Já possui uma conta?
             <button onclick="toggleToAccess()" class="alternative">Acesse a sua conta</button>
           </p>
+
+          <hr>
+
+          <p>
+            Ou acesse usando: <br>
+            <img src="./imgs/google.png" alt="Entrar com Google" onclick="signInWithGoogle()">
+            <img src="./imgs/facebook.png" alt="Autenticação pelo Facebook" onclick="signInWithFacebook()">
+          </p>
         </div>
 
         <!--Conteúdo destinado para usuários autenticados-->
         <div id="userContent" class="startHidden">
           <hr>
           <div id="userInfo" class="center">
-            <p id="userEmail"></p>
+            <img id="userImg">
+            <p id="userName"></p>
+            <hr>
             <p id="emailVerified"></p>
             <div id="sendEmailVerificationDiv">
               <button class="alternative" onclick="sendEmailVerification()">
